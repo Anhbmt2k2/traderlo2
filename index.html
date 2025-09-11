@@ -17,7 +17,8 @@
     }
     .brand-font {
       font-family: 'Playfair Display', serif;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
     }
     html {
       scroll-behavior: smooth;
@@ -28,28 +29,28 @@
 
   <!-- NAVIGATION -->
   <nav class="bg-white bg-opacity-95 shadow sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4">
+    <div class="max-w-7xl mx-auto px-6">
       <div class="flex justify-between items-center h-16">
 
         <!-- Logo -->
-        <a href="#" class="flex items-center space-x-2">
-          <img src="tradelo.jpg" alt="Logo Trader Lỏ" class="w-10 h-10 object-contain rounded-full">
-          <span class="brand-font text-2xl font-bold text-yellow-600">Trader Lỏ</span>
+        <a href="#" class="flex items-center space-x-3">
+          <img src="tradelo.jpg" alt="Logo Trader Lỏ" class="w-11 h-11 object-cover rounded-full border-2 border-yellow-500 shadow">
+          <span class="brand-font text-3xl font-bold text-yellow-600">Trader Lỏ</span>
         </a>
 
         <!-- Menu Desktop -->
-        <div class="hidden md:flex space-x-6 font-medium">
-          <a href="#bingx" class="hover:text-yellow-600">BingX</a>
-          <a href="#mexc" class="hover:text-green-600">MEXC</a>
-          <a href="#loiich" class="hover:text-blue-600">Lợi ích</a>
-          <a href="#huongdan" class="hover:text-indigo-600">Hướng dẫn</a>
-          <a href="#channel" class="hover:text-purple-600">Channel</a>
+        <div class="hidden md:flex space-x-8 font-medium">
+          <a href="#bingx" class="hover:text-yellow-600 transition">BingX</a>
+          <a href="#mexc" class="hover:text-green-600 transition">MEXC</a>
+          <a href="#loiich" class="hover:text-blue-600 transition">Lợi ích</a>
+          <a href="#huongdan" class="hover:text-indigo-600 transition">Hướng dẫn</a>
+          <a href="#channel" class="hover:text-purple-600 transition">Channel</a>
         </div>
 
         <!-- Mobile Button -->
         <div class="md:hidden">
           <button id="menu-btn" class="focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
@@ -60,83 +61,78 @@
 
     <!-- Mobile Menu -->
     <div id="menu" class="hidden md:hidden bg-white bg-opacity-95 shadow-lg">
-      <a href="#bingx" class="block px-4 py-2 hover:bg-yellow-100">BingX</a>
-      <a href="#mexc" class="block px-4 py-2 hover:bg-green-100">MEXC</a>
-      <a href="#loiich" class="block px-4 py-2 hover:bg-blue-100">Lợi ích</a>
-      <a href="#huongdan" class="block px-4 py-2 hover:bg-indigo-100">Hướng dẫn</a>
-      <a href="#channel" class="block px-4 py-2 hover:bg-purple-100">Channel</a>
+      <a href="#bingx" class="block px-6 py-3 hover:bg-yellow-100">BingX</a>
+      <a href="#mexc" class="block px-6 py-3 hover:bg-green-100">MEXC</a>
+      <a href="#loiich" class="block px-6 py-3 hover:bg-blue-100">Lợi ích</a>
+      <a href="#huongdan" class="block px-6 py-3 hover:bg-indigo-100">Hướng dẫn</a>
+      <a href="#channel" class="block px-6 py-3 hover:bg-purple-100">Channel</a>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="text-center py-16 bg-white bg-opacity-80 shadow-md">
-    <h1 class="brand-font text-5xl font-extrabold text-blue-500 mb-4">TRADER LỎ</h1>
-    <p class="text-lg text-gray-700 mb-6">Nơi bạn nhận hoàn phí, chia sẻ lợi nhuận và kiến thức trading.</p>
-    <div class="space-x-4">
-      <a href="#bingx" class="px-6 py-3 bg-yellow-500 text-black font-bold rounded-lg shadow hover:bg-yellow-400 transition">👉 Bắt đầu với BingX</a>
-      <a href="#mexc" class="px-6 py-3 bg-green-500 text-black font-bold rounded-lg shadow hover:bg-green-400 transition">👉 Bắt đầu với MEXC</a>
+  <section class="text-center py-20 bg-white bg-opacity-80 shadow-md">
+    <h1 class="brand-font text-6xl font-extrabold text-blue-600 mb-6">TRADER LỎ</h1>
+    <p class="text-xl text-gray-700 max-w-2xl mx-auto mb-8">Nơi bạn nhận hoàn phí, chia sẻ lợi nhuận và kiến thức trading.</p>
+    <div class="space-x-6">
+      <a href="#bingx" class="px-7 py-3 bg-yellow-500 text-black font-bold rounded-xl shadow hover:bg-yellow-400 transition">👉 Bắt đầu với BingX</a>
+      <a href="#mexc" class="px-7 py-3 bg-green-500 text-black font-bold rounded-xl shadow hover:bg-green-400 transition">👉 Bắt đầu với MEXC</a>
     </div>
   </section>
 
   <!-- MAIN CONTENT -->
-  <main class="max-w-5xl mx-auto p-6 space-y-10 text-gray-800">
+  <main class="max-w-6xl mx-auto px-6 py-16 space-y-12 text-gray-800">
 
     <!-- BingX -->
-    <section id="bingx" class="bg-yellow-100 p-6 rounded-xl shadow-lg">
-      <h2 class="text-2xl font-semibold mb-2 text-blue-600">🎯 Hoàn Phí Giao Dịch BingX</h2>
+    <section id="bingx" class="bg-yellow-100 p-8 rounded-2xl shadow-lg">
+      <h2 class="text-3xl font-bold mb-3 text-blue-600">🎯 Hoàn Phí Giao Dịch BingX</h2>
       <p class="mb-4">Khi bạn đăng ký tài khoản BingX qua liên kết dưới đây, bạn sẽ được hoàn phí giao dịch 45% và nhiều phần thưởng độc quyền.</p>
-      <p><strong>Ref code:</strong> <code>traderlo</code></p>
+      <p><strong>Ref code:</strong> <code class="bg-white px-2 py-1 rounded">traderlo</code></p>
       <a href="https://bingx.com/partner/traderlo" target="_blank"
-         class="inline-block mt-4 px-4 py-2 bg-yellow-500 text-black font-bold rounded hover:bg-yellow-400 transition">
+         class="inline-block mt-5 px-6 py-3 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-400 transition">
         👉 Đăng ký BingX ngay
       </a>
     </section>
 
     <!-- MEXC -->
-    <section id="mexc" class="bg-green-100 p-6 rounded-xl shadow-lg">
-      <h2 class="text-2xl font-semibold mb-2 text-green-700">📈 Hoàn Phí Giao Dịch MEXC</h2>
+    <section id="mexc" class="bg-green-100 p-8 rounded-2xl shadow-lg">
+      <h2 class="text-3xl font-bold mb-3 text-green-700">📈 Hoàn Phí Giao Dịch MEXC</h2>
       <p class="mb-4">Khi bạn đăng ký tài khoản MEXC qua liên kết dưới đây để nhận hoàn phí giao dịch 20% và nhiều phần thưởng độc quyền.</p>
-      <p><strong>Ref code:</strong> <code>mexc-Traderlo</code></p>
+      <p><strong>Ref code:</strong> <code class="bg-white px-2 py-1 rounded">mexc-Traderlo</code></p>
       <a href="https://www.mexc.com/vi-VN/acquisition/custom-sign-up?shareCode=mexc-Traderlo" target="_blank"
-         class="inline-block mt-4 px-4 py-2 bg-green-500 text-black font-bold rounded hover:bg-green-400 transition">
+         class="inline-block mt-5 px-6 py-3 bg-green-500 text-black font-bold rounded-lg hover:bg-green-400 transition">
         👉 Đăng ký MEXC ngay
       </a>
     </section>
 
     <!-- Lợi ích -->
-    <section id="loiich" class="bg-blue-100 p-6 rounded-xl shadow-lg">
-      <h2 class="text-2xl font-semibold mb-2 text-blue-700">💡 Lợi Ích Khi Đăng Ký</h2>
-      <ul class="list-disc list-inside space-y-2">
+    <section id="loiich" class="bg-blue-100 p-8 rounded-2xl shadow-lg">
+      <h2 class="text-3xl font-bold mb-3 text-blue-700">💡 Lợi Ích Khi Đăng Ký</h2>
+      <ul class="list-disc list-inside space-y-3">
         <li><strong>Hoàn phí giao dịch:</strong> Nhận lại chi phí giao dịch trong ngày, tăng lợi nhuận.</li>
         <li><strong>Chương trình đối tác:</strong> Cơ hội kiếm thêm thu nhập từ giới thiệu bạn bè.</li>
         <li><strong>Nền tảng uy tín:</strong> BingX & MEXC hỗ trợ đa dạng sản phẩm.</li>
-        <li><strong>Cộng đồng hỗ trợ:</strong> Tham gia channel <li><strong>Cộng đồng hỗ trợ:</strong> Tham gia channel để học hỏi chiến lược.</li>
+        <li><strong>Cộng đồng hỗ trợ:</strong> Tham gia channel để học hỏi chiến lược.</li>
       </ul>
     </section>
 
     <!-- Hướng dẫn -->
-    <section id="huongdan" class="max-w-7xl mx-auto px-6 py-16">
-      <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Hướng Dẫn Chuyển Ref</h3>
+    <section id="huongdan" class="px-6 py-16">
+      <h3 class="text-4xl font-extrabold text-center text-gray-800 mb-14">Hướng Dẫn Chuyển Ref</h3>
 
-      <div class="grid md:grid-cols-2 gap-8">
+      <div class="grid md:grid-cols-2 gap-10">
 
         <!-- BingX -->
         <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-600">
           <h4 class="text-2xl font-bold text-blue-600 mb-4">CHUYỂN REF TRADER LỎ SÀN BINGX</h4>
           <p class="font-semibold text-gray-700">ĐỂ HOÀN NHẬN 45% PHÍ SPOT VÀ FUTURES HÀNG NGÀY VĨNH VIỄN</p>
           <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
-            <li>Bước 1: Bạn dùng EMAIL/SĐT mới để đăng ký tài khoản theo link ref: 
+            <li>Bước 1: Dùng EMAIL/SĐT mới để đăng ký tài khoản theo link ref:
               <a href="https://bingx.com/partner/traderlo" class="text-blue-600 underline">https://bingx.com/partner/traderlo</a><br>
               Mã giới thiệu: <span class="font-bold">traderlo</span>
             </li>
-            <li>Bước 2: Đăng nhập lại tài khoản BingX cũ rút tài sản ra khỏi ví và chuyển KYC như video.</li>
+            <li>Bước 2: Đăng nhập lại tài khoản BingX cũ, rút tài sản và chuyển KYC như video.</li>
           </ul>
-          <p class="mt-4"><span class="font-semibold">Cơ chế hoàn tiền:</span> Tiền sẽ được hoàn ngay vào lúc 24h mỗi ngày.</p>
-          <p class="mt-2"><span class="font-semibold">Lưu ý:</span></p>
-          <ul class="list-disc list-inside text-gray-600 space-y-1">
-            <li>Tài khoản BingX cũ phải ngưng giao dịch 7 ngày trước khi chuyển KYC.</li>
-            <li>Sau khi chuyển đổi danh tính thành công - cả 2 tài khoản sẽ bị khóa rút tiền trong 24h.</li>
-          </ul>
+          <p class="mt-4"><span class="font-semibold">Cơ chế hoàn tiền:</span> Tiền sẽ được hoàn ngay lúc 24h mỗi ngày.</p>
         </div>
 
         <!-- MEXC -->
@@ -144,30 +140,24 @@
           <h4 class="text-2xl font-bold text-green-600 mb-4">CHUYỂN REF TRADER LỎ SÀN MEXC</h4>
           <p class="font-semibold text-gray-700">ĐỂ NHẬN 20% HOÀN PHÍ SPOT VÀ FUTURES HÀNG NGÀY VĨNH VIỄN</p>
           <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
-            <li>Bước 1: Tạo một tài khoản MEXC mới theo link ref Cashback Exchange: 
+            <li>Bước 1: Tạo tài khoản MEXC mới qua link:
               <a href="https://www.mexc.com/vi-VN/acquisition/custom-sign-up?shareCode=mexc-Traderlo" class="text-green-600 underline">Đăng ký tại đây</a><br>
               Mã giới thiệu: <span class="font-bold">mexc-Traderlo</span>
             </li>
-            <li>Bước 2: Dùng CMT/CCCD/Passport để KYC tài khoản mới.</li>
+            <li>Bước 2: KYC bằng CCCD/Passport cho tài khoản mới.</li>
           </ul>
-          <p class="mt-4"><span class="font-semibold">Cơ chế hoàn tiền:</span> 20% tiền phí giao dịch sẽ được hoàn tự động qua UID của bạn hằng ngày.</p>
-          <p class="mt-2"><span class="font-semibold">Lưu ý:</span></p>
-          <ul class="list-disc list-inside text-gray-600 space-y-1">
-            <li>Không nên sử dụng 2 tài khoản MEXC trên cùng 1 thiết bị.</li>
-            <li>Dùng EMAIL mới để đăng ký, CCCD cũ để KYC (1 CCCD có thể KYC 10 tài khoản).</li>
-            <li>Có thể dùng giấy tờ khác như Bằng lái xe, Passport.</li>
-          </ul>
+          <p class="mt-4"><span class="font-semibold">Cơ chế hoàn tiền:</span> 20% phí giao dịch được hoàn tự động qua UID hằng ngày.</p>
         </div>
 
       </div>
     </section>
 
     <!-- Channel -->
-    <section id="channel" class="bg-indigo-100 p-6 rounded-xl shadow-lg">
-      <h2 class="text-2xl font-semibold mb-2 text-indigo-700">💬 Tham Gia Channel</h2>
-      <p class="mb-4">Nhận kèo miễn phí ở channel <strong>Tổ Đội Gồng Vô Cực</strong>.</p>
+    <section id="channel" class="bg-indigo-100 p-8 rounded-2xl shadow-lg text-center">
+      <h2 class="text-3xl font-bold mb-3 text-indigo-700">💬 Tham Gia Channel</h2>
+      <p class="mb-5">Nhận kèo miễn phí ở channel <strong>Tổ Đội Gồng Vô Cực</strong>.</p>
       <a href="https://t.me/todoigongvocuc" target="_blank"
-         class="inline-block mt-4 px-4 py-2 bg-indigo-400 text-black font-bold rounded hover:bg-indigo-300 transition">
+         class="inline-block px-6 py-3 bg-indigo-500 text-black font-bold rounded-lg hover:bg-indigo-400 transition">
         👉 Tham Gia Ngay
       </a>
     </section>
@@ -175,20 +165,14 @@
   </main>
 
   <!-- Footer -->
-  <footer id="lienhe" class="bg-gray-800 text-gray-300 py-8 mt-12">
-    <div class="max-w-7xl mx-auto px-6 text-center space-y-4">
-      <div class="flex justify-center space-x-6">
-        <a href="https://t.me/traderlo" target="_blank" class="hover:text-white flex items-center space-x-2">
-          <span>Telegram</span>
-        </a>
-        <a href="https://twitter.com/traderlo" target="_blank" class="hover:text-white flex items-center space-x-2">
-          <span>Twitter</span>
-        </a>
-        <a href="mailto:admin@traderlo.com" class="hover:text-white flex items-center space-x-2">
-          <span>Email</span>
-        </a>
+  <footer id="lienhe" class="bg-gray-800 text-gray-300 py-10 mt-16">
+    <div class="max-w-7xl mx-auto px-6 text-center space-y-6">
+      <div class="flex justify-center space-x-8">
+        <a href="https://t.me/traderlo" target="_blank" class="hover:text-white">Telegram</a>
+        <a href="https://twitter.com/traderlo" target="_blank" class="hover:text-white">Twitter</a>
+        <a href="mailto:admin@traderlo.com" class="hover:text-white">Email</a>
       </div>
-      <p>&copy; 2025 Trader Lỏ. All rights reserved.</p>
+      <p class="text-sm">&copy; 2025 Trader Lỏ. All rights reserved.</p>
     </div>
   </footer>
 
